@@ -1,0 +1,49 @@
+/* Con el texto anterior, crear una composición similar a la de la imagen de
+la siguiente página.
+
+Las dimensiones de esta composición serían las siguientes:
+El body tendrá un borde de 8px
+El contenido estará centrado dentro del body e irá dentro de un div que tendrá
+106px de margen superior
+En el primer texto irá el nombre del autor con una fuente de 18px y un margen
+inferior de 40px
+El titular irá después con un tamaño de fuente de 32px y un margen inferior de
+32px
+Cada párrafo tendrá un tamaño de fuente de 18px y un margen inferior de 27px
+El enlace tendrá un paddinfg superior e inferior de 8px y otro izquierdo y
+derecho de 16px y un margen izquierdo de -16px */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.content {
+  border: 4px solid transparent;
+}
+
+.paragraph {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.image {
+  height: 200px;
+  border: 4px solid transparent;
+  vertical-align: bottom;
+}
+
+.col1-3 {
+  width: 33.33333333%;
+}
+
+.col2-3 {
+  width: 66.66666666%;
+}
+
+.col3-3 {
+  width: 100%;
+}
