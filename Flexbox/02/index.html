@@ -1,0 +1,54 @@
+<!-- Convertir la imagen anterior a código usando HTML y CSS y lo que habéis
+aprendido hoy de Flexbox. Los requisitos son los siguientes
+En este caso si el tamaño de la ventana aumenta solo aumentará el tamaño del
+bloque central, el bloque gris de la izquierda y el grupo que compone la
+puntuación, texto y estrella de la derecha siempre tendrán el mismo tamaño
+ (ejemplo abajo)
+El ancho del conjunto entero debe ser del	 100% con un ancho máximo de 840px
+Para el bloque gris de la izquierda debéis buscar una imagen cuadrada y colocarla
+ahí
+No os preocupeis por el tamaño de cada elemento, lo importante es que el resultado
+tenga una composición similar
+Para redondear los bordes debéis usar border-radius con unidades en pixel (por
+ejemplo, border-radius: 5px)
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Flexbox ejercicio 2</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="row container">
+
+      <div class="photo-wrapper">
+        <img class="photo" src="images/logo.png" alt="foto de establecimiento">
+      </div>
+
+      <div class="grow">
+        <h1>Centro de fisioterapia Guzman Fernández</h1>
+        <h2>Fisioterapia General</h2>
+        <div class="row">
+          <a class="button-link" href="#">Reservar cita</a>
+          <a class="button-link" href="#">Pedir presupuesto</a>
+        </div>
+      </div>
+
+      <div class="column horizontal-align-right">
+        <div class="info-reviews row vertical-align-middle">
+          <div class="info-reviews-text">
+            <p>24 valoraciones</p>
+            <a href="#">Ver comentarios -></a>
+          </div>
+          <p class="score">8,9</p>
+        </div>
+        <button class="button-fav" type="button" name="button">
+          <img class="star-icon" src="images/star.png" alt="Fav">
+        </button>
+      </div>
+
+    </div>
+  </body>
+</html>

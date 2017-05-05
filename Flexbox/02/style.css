@@ -1,0 +1,91 @@
+/* Convertir la imagen anterior a código usando HTML y CSS y lo que habéis
+aprendido hoy de Flexbox. Los requisitos son los siguientes
+En este caso si el tamaño de la ventana aumenta solo aumentará el tamaño del
+bloque central, el bloque gris de la izquierda y el grupo que compone la
+puntuación, texto y estrella de la derecha siempre tendrán el mismo tamaño
+ (ejemplo abajo)
+El ancho del conjunto entero debe ser del	 100% con un ancho máximo de 840px
+Para el bloque gris de la izquierda debéis buscar una imagen cuadrada y colocarla
+ahí
+No os preocupeis por el tamaño de cada elemento, lo importante es que el resultado
+tenga una composición similar
+Para redondear los bordes debéis usar border-radius con unidades en pixel (por
+ejemplo, border-radius: 5px) */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.vertical-align-middle {
+  align-items: center;
+}
+
+.horizontal-align-right {
+  align-items: flex-end;
+}
+
+.grow {
+  flex-grow: 1;
+}
+
+.container {
+  max-width: 840px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.photo {
+  width: 180px;
+}
+
+.button-link {
+  padding: 6px 12px;
+  border-radius: 4px;
+  background-color: #e1e1e1;
+  color: black;
+  text-decoration: none;
+}
+
+.button-link + .button-link {
+  margin-left: 12px;
+}
+
+.button-fav {
+  padding: 0;
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.star-icon {
+  width: 72px;
+}
+
+.score {
+  padding: 16px;
+  font-size: 24px;
+  background-color: #e1e1e1;
+  border-radius: 5px;
+  margin: 0;
+}
