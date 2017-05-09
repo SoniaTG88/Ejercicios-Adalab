@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Ejercicio formulario Sonia</title>
+</head>
+
+<body>
+  <div id="container">
+    <h1>Create an account</h1>
+    <h2>It's free and always will be.</h2>
+
+    <div class="create-account">
+      <form class="">
+        <input type="text" name="name" class="input-top" id="nameJS" placeholder="First name">
+        <input type="text" name="surname" class="input-top" placeholder="Surname">
+        <input type="email" name="email-mobile" class="input-bottom" id="emailMobileJS" placeholder="Email or mobile number">
+        <input type="email" name="email-mobile" class="input-bottom" id="emailMobileCheckJS" placeholder="Re-enter email or mobile number">
+        <input type="password" name="password" class="input-bottom" placeholder="New password">
+
+        <div class="birthdate">
+          <label class="label-big" for="dayBirth">Birthday</label>
+          <select class="dropdown" id="birthdayDayJS" name="dayBirth">
+          <option value="Day">Day</option>
+        </select>
+          <select class="dropdown" id="birthdayMonthJS" name="monthBirth">
+          <option value="Month">Month</option>
+        </select>
+          <select class="dropdown" id="birthdayYearJS" name="yearBirth">
+          <option value="Year">Year</option>
+        </select>
+        </div>
+
+        <div class="side">
+          <small><a href="#">Why do I need to provide my date of birth?</a></small>
+        </div>
+
+        <input type="radio" name="gender" class="radio" id="gender-female" value="female">
+        <label for="gender-female" class="label-small">Female</label>
+        <input type="radio" name="gender" class="radio" id="gender-male" value="male">
+        <label for="gender-male" class="label-small">Male</label>
+        <p><small>By clicking Create an account, you agree to our
+        <a href="#">Terms</a> and that you have read our
+        <a href="#">Data Policy</a>, including our <a href="#">Cookie Use</a>.</small>
+        </p>
+        <input type="button" class="button-submit" value="Create an account">
+      </form>
+
+      <p id="js-createAccount-check"></p>
+    </div>
+
+    <script src="main.js" charset="utf-8"></script>
+    <div>
+</body>
+
+</html>
